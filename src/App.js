@@ -1,12 +1,14 @@
 import './App.css';
 import Header from './Components/Header';
+import Nav from './Components/Nav';
+import Button from './Components/Button';
 
 function App() {
-  const name = 'Cassandra Reinhart'
   return (
     <div className="App container">
-      <h1>{name}</h1>
-      <h2>Software Developer</h2>
+      <Nav></Nav>
+      <Header title="Portfolio"/>
+      
     </div>
   );
 }
