@@ -7,7 +7,7 @@ const Project = (props) => {
             title: 'Hack or Snooze',
             image: 'Implement Dark Mode',
             url: 'https://cassreinhart.github.io/hack-or-snooze/#',
-            github: ''
+            github: 'https://github.com/cassreinhart/hack-or-snooze'
         },
         {
             id: 2,
@@ -15,14 +15,14 @@ const Project = (props) => {
             image: '',
             video: 'Post this on youtube...',
             url: 'https://imgman.herokuapp.com/',
-            github: ''
+            github: 'https://github.com/cassreinhart/imgman'
         },
         {
             id: 3,
             title: 'Project Management App',
             image: 'tbd',
             url: 'tbd',
-            github: ''
+            github: 'https://github.com/cassreinhart/Capstone-1'
         },
         {
             id: 4,
@@ -30,7 +30,7 @@ const Project = (props) => {
             image: 'tbd',
             video: 'Post me to youtube...',
             url: 'link to github',
-            github: ''
+            github: 'https://github.com/cassreinhart/flask-boggle'
         },
     ]
   return (
