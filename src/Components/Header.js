@@ -3,8 +3,8 @@ import PropTypes from 'prop-types'
 const Header = (props) => {
   return (
     <header>
-        <h1>Welcome to My {props.title}</h1>
-        <h1 style={{ color: '#9b70bb', backgroundColor: '#2d2633'}}>{props.name}</h1>
+        {/* <h1>Welcome to My {props.title}</h1> */}
+        <h1>{props.name}</h1>
       <h2>Software Developer</h2>
     </header>
   )
