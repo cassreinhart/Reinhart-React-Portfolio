@@ -37,9 +37,9 @@ const Project = (props) => {
     <section>
         {projects.map(project => {
             return (
-            <div key={project.id}>
+            <div key={project.id} className="project">
                 <h3>{project.title}</h3>
-                <a href={project.video ? project.video : project.url}><img src={project.image}/></a>
+                <a href={project.video ? project.video : project.url}><img src={project.image} sizes=""/></a>
                 <a href={project.github}>Link to Code</a>
             </div>
             )})

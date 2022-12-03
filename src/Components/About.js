@@ -3,6 +3,16 @@ import React from 'react'
 const About = () => {
     const skills = [
         {
+            id: 5,
+            name: 'HTML',
+            icon: '',
+        },
+        {
+            id: 6,
+            name: 'CSS',
+            icon: '',
+        },
+        {
             id: 1,
             name: 'JavaScript',
             icon: '',
@@ -22,11 +32,16 @@ const About = () => {
             name: 'SQL',
             icon: '',
         },
+        {
+            id: 5,
+            name: 'SQLAlchemy',
+            icon: '',
+        },
     ]
   return (
-    <div>
+    <div className='about'>
         <h2>Skills</h2>
-        <ul>
+        <ul className='skills-list'>
             {skills.map(s => <li key={s.id}>{s.name}</li>)}
         </ul>
     </div>
