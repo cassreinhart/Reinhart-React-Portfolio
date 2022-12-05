@@ -5,6 +5,7 @@ import Button from './Components/Button';
 import Project from './Components/Project';
 import Footer from './Components/Footer';
 import About from './Components/About';
+import Contact from './Components/Contact';
 
 function App() {
   return (
@@ -12,9 +13,16 @@ function App() {
       <Nav></Nav>
       <div className="content-wrap">
         <Header title="Portfolio"/>
-        <Button text="Click Me" color="#2e2f4d"/>
+        
+        <h2>My Projects</h2>
         <Project></Project>
         <About></About>
+        <div className='contact'>
+          <ul>
+            <li><Button text="Email Me" color="#2e2f4d" href="mailto:cassandrareinhart@gmail.com"/></li>
+            <li><Button text="Contact Me" color="#2e2f4d" href="{props.linkedIn}"/></li>
+         </ul>
+         </div>
       </div>
       <Footer></Footer>
     </div>

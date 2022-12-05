@@ -13,8 +13,10 @@ body {
   margin: 0;
   top: 50%;
   font-family: 'Montserrat', 'Segoe UI', 'Helvetica Neue', 'sans-serif';
-  background: rgb(79,83,111);
+  min-width: 400px;
+  background:rgba(142,157,204,1);
 background: linear-gradient(90deg, rgba(79,83,111,1) 0%, rgba(140,175,224,1) 64%, rgba(142,157,204,1) 100%), no-repeat;
+
 }
 .container {
   position: relative;
@@ -49,7 +51,7 @@ li a {
   padding: 1rem 2rem;
   text-decoration: none;
 }
-li a:hover {
+.navbar li a:hover {
   background-color: var(--secondary-color);
   /* Doesn't seem to be working */
 }
@@ -58,31 +60,44 @@ li a:hover {
   color: var(--dark-color)
 }
 .content-wrap {
-  padding-bottom: 4rem;
-
-  /* display: flex;
-  flex-direction: column;
-  justify-content:space-between; */
+  padding-bottom: 5rem;
 }
-.content-wrap div, .content-wrap section, header, .about {
-  /* height: 50rem; */
-  /* display: flex; */
-  /* justify-content: space-between; */
+.content-wrap div, .content-wrap section {
+  padding: 2rem;
+  text-align: center;
 }
 .project {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 3rem;
 }
-.skills-list {
+.project h3 {
+  color: #fff;
+}
+.project a {
+  color: var(--pop-color);
+  /* text-decoration: none; */
+}
+.list {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  height: 5rem;
+  padding-inline-start: 0%;
 }
 h1, h2 {
   font-family: 'Montserrat', sans-serif;
   color: #ffff
+}
+h1 {
+  margin-top: 15rem;
+}
+header h2 {
+  margin-bottom: 10rem;
+}
+.greeting {
+  margin-bottom: 15rem;
+  background-color: rgba(103, 107,134, .35);
 }
 p {
   font-family: 'Montserrat', sans-serif;
@@ -90,9 +105,9 @@ p {
 button {
   border: none;
   border-radius: 3px;
-  /* position: relative; */
   top: 4rem;
-  padding: 1rem 2rem;
+  padding: 1rem 1.5rem;
+  width: 9rem;
   font-size: 1rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
@@ -102,6 +117,11 @@ button:hover {
   color: #2e2f4d;
   background-color: #fff;
   font-weight: 600;
+}
+.thanks {
+  margin-top: 10rem;
+  background-color: #C6DEFF;
+  padding: .5rem;
 }
 ul {
   list-style: none;
@@ -117,19 +137,65 @@ footer {
 footer ul {
   display: flex;
   justify-content: space-around;
-  /* padding: .5rem; */
+  color: #fff;
   margin: 0;
 }
 
 img {
   width: 50%;
 }
+.contact ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
+@media screen and (max-width: 600px){
+  .list {
+    flex-direction: column;
+  } 
+  .list li {
+    
+  }
+  img {
+    width: 80%;
+  }
+}
 
 @media screen and (max-width: 480px) {
   .drop-down-nav i {
     width: 5rem;
     height: 4rem;
     font-size: 4rem;
+  }
+  img {
+    width: 100%;
+    min-width: 300px;
+  }
+  .content-wrap section {
+    padding: 0;
+  }
+  .list {
+    margin: 5px 0 5px;
+    padding-inline-start: 0%;
+  }
+  .list li {
+    padding: 5px;
+  }
+  .content-wrap {
+    width: 100%;
+    min-width: 300px;
+  }
+  .greeting {
+    margin-bottom: 10rem;
+  }
+  .drop-down-nav {
+    background-color: #2e2f4d;
+  }
+  .contact ul {
+    flex-direction: column;
+  }
+  .contact li {
+    padding-bottom: 2rem;
   }
 }
