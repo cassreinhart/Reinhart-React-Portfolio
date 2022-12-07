@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Button = ({ color, text}) => <button className='btn' style={{backgroundColor: color}}>{text}</button>
+const Button = ({ color, text, href}) => <a href={href} target="_blank" className='btn' style={{backgroundColor: color}}>{text}</a>
 
 Button.defaultProps = {
     color: '#dbf4a7',

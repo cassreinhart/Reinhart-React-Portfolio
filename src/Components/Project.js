@@ -46,7 +46,8 @@ const Project = (props) => {
             return (
             <div key={project.id} className="project">
                 <h3>{project.title}</h3>
-                <a href={project.video ? project.video : project.url}><img src={process.env.PUBLIC_URL + project.image} sizes=""/></a>
+                <a href={project.video ? project.video : project.url}><img src={process.env.PUBLIC_URL + project.image}/></a>
+                <p>{project.image}</p>
                 <ul className='tech-list list'>
                     {project.tech.map(t => <li>{t}</li>)}
                 </ul>

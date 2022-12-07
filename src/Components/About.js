@@ -52,7 +52,7 @@ const About = () => {
             <li>Teaching</li>
             <li>Interpersonal Skills</li>
         </ul>
-        <p className='thanks'>Thank you for visiting! As I am continuously making improvements, I would appreciate feedback <a href='https://forms.gle/vZQDA7vWEAwC5Upn8'>here</a></p>
+        <p className='thanks'>Thank you for visiting! As I am continuously making improvements, I would appreciate feedback <a href='https://forms.gle/vZQDA7vWEAwC5Upn8' target="_blank">here</a></p>
     </div>
   )
 }

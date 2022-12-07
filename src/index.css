@@ -102,7 +102,11 @@ header h2 {
 p {
   font-family: 'Montserrat', sans-serif;
 }
-button {
+a.btn {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  text-decoration: none;
   border: none;
   border-radius: 3px;
   top: 4rem;
