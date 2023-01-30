@@ -2,7 +2,7 @@ import './App.css';
 import Header from './Components/Header';
 import Nav from './Components/Nav';
 import Button from './Components/Button';
-import Project from './Components/Project';
+import ProjectList from './Components/ProjectList';
 import Footer from './Components/Footer';
 import About from './Components/About';
 import Contact from './Components/Contact';
@@ -14,8 +14,8 @@ function App() {
       <div className="content-wrap">
         <Header title="Portfolio"/>
         
-        <h2>My Projects</h2>
-        <Project></Project>
+        
+        <ProjectList></ProjectList>
         <About></About>
         <div className='contact'>
           <ul>

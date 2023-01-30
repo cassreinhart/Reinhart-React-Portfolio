@@ -1,6 +1,6 @@
-import hackOrSnooze from './hack-or-snooze.png'
-import imgman from './imgman.png'
-import boggle from './boggle.png'
+import hackOrSnooze from '../hack-or-snooze.png'
+import imgman from '../imgman.png'
+import boggle from '../boggle.png'
 
 const projects = [
     {
@@ -41,4 +41,4 @@ const projects = [
     },
 ]
 
-export {projects} from './projectData';
+export {projects} from './projectData'
